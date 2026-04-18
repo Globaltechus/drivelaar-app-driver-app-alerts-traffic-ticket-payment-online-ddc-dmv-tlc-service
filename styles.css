@@ -10,7 +10,7 @@ body {
 .container {
   max-width: 1100px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 40px 20px; /* ↓ reduced from 60px */
 }
 
 /* TYPOGRAPHY */
@@ -88,14 +88,19 @@ p {
 }
 
 /* CTA SECTION */
+section {
+  margin: 0;
+}
 .cta-section {
   text-align: center;
   background: #fff;
   border-radius: 16px;
-  padding: 60px 20px;
-  margin-top: 40px;
+  padding: 40px 20px; /* ↓ reduced */
+  margin-top: 10px;   /* ↓ reduced from 40px */
 }
-
+* {
+  outline: 1px solid red;
+}
 /* FOOTER */
 .footer {
   text-align: center;
@@ -104,7 +109,14 @@ p {
   color: #fff;
   margin-top: 60px;
 }
+.container {
+  padding: 30px 20px;
+}
 
+.cta-section {
+  padding: 30px 20px;
+  margin-top: 0;
+}
 .footer a {
   color: #60a5fa;
   text-decoration: none;
